@@ -1,6 +1,56 @@
+/** Reset and basic styles */
+body {
+    background-color: #121212; /* Dark mode background */
+    color: #E0E0E0; /* Light gray text color */
+    font-family: 'Arial', sans-serif; /* Clean typography */
+    margin: 0;
+    padding: 0;
+}
 
-body{font-family:Arial,Helvetica,sans-serif;background:#0b0f12;color:#e9eef2;margin:0}
-a{color:#64DED4}
-.container{max-width:900px;margin:auto;padding:24px}
-header,section,footer{border:1px solid #222;padding:20px;margin-top:20px;border-radius:12px}
-nav a{margin-right:10px}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Card Section */
+.card {
+    background: #1E1E1E; /* Dark card background */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px); /* Subtle animation on hover */
+}
+
+/* Links and Buttons */
+a {
+    color: #00BCD4; /* Cyan accent color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Generous whitespace */
+h1, h2, h3, p {
+    margin: 20px 0;
+}
+
+/* Responsive design considerations */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 10px 0;
+    }
+}
